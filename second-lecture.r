@@ -143,7 +143,7 @@ for (i in 1:k) {
   }
 }
  
-cv.error # 5 × 8 matrix, of which the (i, j)th element corresponds to the test MSE for the ith cross-validation fold for the best j-variable model.
+cv.error # 5 Ã— 8 matrix, of which the (i, j)th element corresponds to the test MSE for the ith cross-validation fold for the best j-variable model.
 mean.cv.errors <- apply(cv.error,2,mean)
 par(mfrow=c(1,1))
 plot(mean.cv.errors,type='b')
@@ -155,12 +155,3 @@ best.bhat3 <- coef(best.model,id = 3)
 best.bhat3
 
 #-----------------------------------------------------
-
-
-
-
-
-
-
-
-
